@@ -2,7 +2,7 @@ import React from 'react';
 
 const DATA = {
   name: "Yash Tyagi",
-  role: "Flutter Lead Engineer",
+  role: "Lead Flutter Engineer",
   company: "Mobilz Pvt Ltd",
   links: {
     github: "https://github.com/itsyashtyagi",
@@ -11,7 +11,7 @@ const DATA = {
     whatsapp: "https://wa.me/918006402554",
     gmail: "mailto:yashtyagi8006@gmail.com"
   },
-  bio: "I am Yash Tyagi, currently working as a Flutter Lead Engineer at Mobilz Pvt Ltd. I have successfully delivered more than 10+ high-performance mobile applications, bridging the gap between complex architectural design and seamless user experiences.",
+  bio: "I am Yash Tyagi, currently working as a Lead Flutter Engineer at Mobilz Pvt Ltd. I have successfully delivered more than 10+ high-performance mobile applications, bridging the gap between complex architectural design and seamless user experiences.",
   skills: [
     { category: "Core", items: ["Flutter", "Dart", "Android", "iOS"] },
     { category: "Logic", items: ["Bloc", "GetX", "Provider"] },
