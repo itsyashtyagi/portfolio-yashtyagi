@@ -76,7 +76,7 @@ const DATA = {
       category: "Sports & Events",
       desc: "Modern sports platform to discover events, purchase tickets, and shop for sports merchandise in a seamless mobile experience.",
       playStore: "https://play.google.com/store/apps/details?id=com.ccgathletic.customer&hl=en_IN",
-      appStore: "#",
+      appStore: "https://apps.apple.com/us/app/ccg-collective-city-game/id6753856914",
       logo: "https://play-lh.googleusercontent.com/qBS_AnFHRTDhW-e5M9SLybCBOyaSkJT8rRaKo4SGVnFyIkBRJ0QnoEjZp2_s2CKSxf6JRaymDRGsXrVQ3okUnAY=w480-h960-rw",
       accent: "#000000"
     },
@@ -85,7 +85,7 @@ const DATA = {
       category: "Utility / Security",
       desc: "Powerful QR-based ticket verification app for event organizers to manage secure and efficient check-ins.",
       playStore: "https://play.google.com/store/apps/details?id=com.ccg.athleticsguard&hl=en_IN",
-      appStore: "#",
+      appStore: "https://apps.apple.com/us/app/ccg-guard-app/id6753932283",
       logo: "https://play-lh.googleusercontent.com/fGbKs8KuaZk1gBcaVmRhaTxV0ZzsrotSykUgyv9Bwl_ewLbS2HRp7aMVNm-PeCG_1SJFJawy78n7_uQ3LRT6mAo=w480-h960-rw",
       accent: "#374151"
     }
