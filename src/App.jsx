@@ -1,22 +1,25 @@
-import React from 'react';
+import React from "react";
 
 const DATA = {
   name: "Yash Tyagi",
-  role: "Software Engineer",
+  role: "Mobile Application Engineer",
   company: "Mobilz Pvt Ltd",
   links: {
     github: "https://github.com/itsyashtyagi",
     linkedin: "https://www.linkedin.com/in/itstyagiyash/",
     x: "https://x.com/imYASHTYAGI",
     whatsapp: "https://wa.me/918006402554",
-    gmail: "mailto:yashtyagi8006@gmail.com"
+    gmail: "mailto:yashtyagi8006@gmail.com",
   },
   bio: "I am Yash Tyagi, currently working as a Software Engineer at Mobilz Pvt Ltd. I have successfully delivered more than 10+ high-performance mobile applications, bridging the gap between complex architectural design and seamless user experiences.",
   skills: [
     { category: "Core", items: ["Flutter", "Dart", "Android", "iOS"] },
     { category: "Logic", items: ["Bloc", "GetX", "Provider"] },
     { category: "Data", items: ["Firebase", "REST APIs", "SQLite", "Hive"] },
-    { category: "Tools", items: ["Git", "CI/CD", "Google Play Deployment", "App Store Deployment"] }
+    {
+      category: "Tools",
+      items: ["Git", "CI/CD", "Google Play Deployment", "App Store Deployment"],
+    },
   ],
   experience: [
     {
@@ -28,9 +31,9 @@ const DATA = {
         {
           title: "Software Engineer",
           period: "Oct 2024 - Present",
-          desc: "Developed and optimized several production-level applications, focusing on performance, UI/UX precision, and API integration, and ensure high-standard code architecture across all Flutter projects."
-        }
-      ]
+          desc: "Developed and optimized several production-level applications, focusing on performance, UI/UX precision, and API integration, and ensure high-standard code architecture across all Flutter projects.",
+        },
+      ],
     },
     {
       company: "Appfoster",
@@ -39,8 +42,8 @@ const DATA = {
       isPromoted: false,
       role: "Software Engineer Intern",
       period: "March 2024 - August 2024",
-      desc: "Hands-on internship where I built the CloudHR mobile app from scratch and gained expertise in the Flutter ecosystem."
-    }
+      desc: "Hands-on internship where I built the CloudHR mobile app from scratch and gained expertise in the Flutter ecosystem.",
+    },
   ],
   apps: [
     {
@@ -49,57 +52,147 @@ const DATA = {
       desc: "Helps young athletes develop mental strength, confidence, and overall well-being through sports psychology tools and engaging audio experiences.",
       appStore: "https://apps.apple.com/in/iphone/search?term=Mindto",
       playStore: "#",
-      logo: "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/15/05/d415054b-9568-afe6-0cac-51739b84c83d/Placeholder.mill/400x400bb-75.webp", 
-      accent: "#4ADE80"
+      logo: "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/15/05/d415054b-9568-afe6-0cac-51739b84c83d/Placeholder.mill/400x400bb-75.webp",
+      accent: "#4ADE80",
     },
     {
       name: "CloudHR",
       category: "HR Management",
       desc: "A comprehensive tool to engage, manage, and grow your team effortlessly while handling HR tasks automatically.",
-      playStore: "https://play.google.com/store/apps/details?id=com.cloudhr&hl=en_IN",
+      playStore:
+        "https://play.google.com/store/apps/details?id=com.cloudhr&hl=en_IN",
       appStore: "https://apps.apple.com/in/app/cloudhr/id6751147780",
       logo: "https://play-lh.googleusercontent.com/Ayf-H5YjMLDLyCAmxBKyBBHUfM-i_gV_NN4PqXSvzf715h_1_WqXMGPP7_t5qHfajg=w480-h960-rw",
-      accent: "#1e3a8a"
+      accent: "#1e3a8a",
     },
     {
       name: "LocaFri",
       category: "Car Rental",
       desc: "The all-in-one solution for vehicle rental. Find, book, and drive — all in one simple mobile application.",
-      playStore: "https://play.google.com/store/apps/details?id=com.locafri.app&hl=en_IN",
+      playStore:
+        "https://play.google.com/store/apps/details?id=com.locafri.app&hl=en_IN",
       appStore: "#",
       logo: "https://play-lh.googleusercontent.com/9FzQJbN2y_YCHYdkCB9SUJQR-ZgBNwnCumW6I1UHYR3RNQEcnSG6HnuhsSd_7b093zE=w480-h960-rw",
-      accent: "#f97316"
+      accent: "#f97316",
     },
     {
       name: "CCG Athletics",
       category: "Sports & Events",
       desc: "Modern sports platform to discover events, purchase tickets, and shop for sports merchandise in a seamless mobile experience.",
-      playStore: "https://play.google.com/store/apps/details?id=com.ccgathletic.customer&hl=en_IN",
-      appStore: "https://apps.apple.com/us/app/ccg-collective-city-game/id6753856914",
+      playStore:
+        "https://play.google.com/store/apps/details?id=com.ccgathletic.customer&hl=en_IN",
+      appStore:
+        "https://apps.apple.com/us/app/ccg-collective-city-game/id6753856914",
       logo: "https://play-lh.googleusercontent.com/qBS_AnFHRTDhW-e5M9SLybCBOyaSkJT8rRaKo4SGVnFyIkBRJ0QnoEjZp2_s2CKSxf6JRaymDRGsXrVQ3okUnAY=w480-h960-rw",
-      accent: "#000000"
+      accent: "#000000",
     },
     {
       name: "CCG Guard",
       category: "Utility / Security",
       desc: "Powerful QR-based ticket verification app for event organizers to manage secure and efficient check-ins.",
-      playStore: "https://play.google.com/store/apps/details?id=com.ccg.athleticsguard&hl=en_IN",
+      playStore:
+        "https://play.google.com/store/apps/details?id=com.ccg.athleticsguard&hl=en_IN",
       appStore: "https://apps.apple.com/us/app/ccg-guard-app/id6753932283",
       logo: "https://play-lh.googleusercontent.com/fGbKs8KuaZk1gBcaVmRhaTxV0ZzsrotSykUgyv9Bwl_ewLbS2HRp7aMVNm-PeCG_1SJFJawy78n7_uQ3LRT6mAo=w480-h960-rw",
-      accent: "#374151"
-    }
-  ]
+      accent: "#374151",
+    },
+  ],
 };
 
 const Icons = {
-  Github: () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>,
-  Linkedin: () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>,
-  X: () => <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>,
-  WhatsApp: () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>,
-  Mail: () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>,
-  Globe: () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M2 12h20"></path><path d="M12 2a15.9 15.9 0 0 1 0 20"></path><path d="M12 2a15.9 15.9 0 0 0 0 20"></path><path d="M7 4.5c2.2 3.5 2.2 10.5 0 14"></path><path d="M17 4.5c-2.2 3.5-2.2 10.5 0 14"></path></svg>,
-  Apple: () => <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.1 2.48-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .76-3.27.82-1.31.05-2.31-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.22-1.98 1.08-3.14-1.03.04-2.27.69-3.01 1.56-.66.76-1.24 1.95-1.08 3.06 1.15.09 2.28-.65 3.01-1.48z" /></svg>,
-  PlayStore: () => <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.1-.12L3.5 22.05V1.95l.11-.136zM14.5 12.7l2.29 2.29L4.79 22.14a.8.8 0 0 0 .51.15.75.75 0 0 0 .42-.13L14.5 12.7zm.71-.7l6.54-3.73a.74.74 0 0 0 .4-.67.74.74 0 0 0-.4-.67L15.21 3.2 13.09 5.31 15.21 12zM14.5 11.3l-8.78-5a.75.75 0 0 0-.42-.13.8.8 0 0 0-.51.15L14.5 11.3z" /></svg>
+  Github: () => (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+    </svg>
+  ),
+  Linkedin: () => (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+      <rect x="2" y="9" width="4" height="12"></rect>
+      <circle cx="4" cy="4" r="2"></circle>
+    </svg>
+  ),
+  X: () => (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+    </svg>
+  ),
+  WhatsApp: () => (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+    </svg>
+  ),
+  Mail: () => (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+      <polyline points="22,6 12,13 2,6"></polyline>
+    </svg>
+  ),
+  Globe: () => (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="9"></circle>
+      <path d="M2 12h20"></path>
+      <path d="M12 2a15.9 15.9 0 0 1 0 20"></path>
+      <path d="M12 2a15.9 15.9 0 0 0 0 20"></path>
+      <path d="M7 4.5c2.2 3.5 2.2 10.5 0 14"></path>
+      <path d="M17 4.5c-2.2 3.5-2.2 10.5 0 14"></path>
+    </svg>
+  ),
+  Apple: () => (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.1 2.48-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .76-3.27.82-1.31.05-2.31-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.22-1.98 1.08-3.14-1.03.04-2.27.69-3.01 1.56-.66.76-1.24 1.95-1.08 3.06 1.15.09 2.28-.65 3.01-1.48z" />
+    </svg>
+  ),
+  PlayStore: () => (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.1-.12L3.5 22.05V1.95l.11-.136zM14.5 12.7l2.29 2.29L4.79 22.14a.8.8 0 0 0 .51.15.75.75 0 0 0 .42-.13L14.5 12.7zm.71-.7l6.54-3.73a.74.74 0 0 0 .4-.67.74.74 0 0 0-.4-.67L15.21 3.2 13.09 5.31 15.21 12zM14.5 11.3l-8.78-5a.75.75 0 0 0-.42-.13.8.8 0 0 0-.51.15L14.5 11.3z" />
+    </svg>
+  ),
 };
 
 export default function App() {
@@ -165,16 +258,34 @@ export default function App() {
       `}</style>
 
       <nav>
-        <div className="wrapper" style={{display:'flex', width:'100%', justifyContent:'space-between', alignItems:'center'}}>
+        <div
+          className="wrapper"
+          style={{
+            display: "flex",
+            width: "100%",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <div className="logo">Yash Tyagi.</div>
-          
+
           <div className="social-nav">
             <span className="phone-text">{DATA.phone}</span>
-            <a href={DATA.links.whatsapp} target="_blank" rel="noreferrer"><Icons.WhatsApp /></a>
-            <a href={DATA.links.linkedin} target="_blank" rel="noreferrer"><Icons.Linkedin /></a>
-            <a href={DATA.links.github} target="_blank" rel="noreferrer"><Icons.Github /></a>
-            <a href={DATA.links.x} target="_blank" rel="noreferrer"><Icons.X /></a>
-            <a href={DATA.links.gmail}><Icons.Mail /></a>
+            <a href={DATA.links.whatsapp} target="_blank" rel="noreferrer">
+              <Icons.WhatsApp />
+            </a>
+            <a href={DATA.links.linkedin} target="_blank" rel="noreferrer">
+              <Icons.Linkedin />
+            </a>
+            <a href={DATA.links.github} target="_blank" rel="noreferrer">
+              <Icons.Github />
+            </a>
+            <a href={DATA.links.x} target="_blank" rel="noreferrer">
+              <Icons.X />
+            </a>
+            <a href={DATA.links.gmail}>
+              <Icons.Mail />
+            </a>
           </div>
         </div>
       </nav>
@@ -192,8 +303,10 @@ export default function App() {
               <div key={i} className="skill-row">
                 <div className="skill-cat">{group.category}</div>
                 <div className="skill-list">
-                  {group.items.map(skill => (
-                    <span key={skill} className="skill-text">{skill}</span>
+                  {group.items.map((skill) => (
+                    <span key={skill} className="skill-text">
+                      {skill}
+                    </span>
                   ))}
                 </div>
               </div>
@@ -206,17 +319,32 @@ export default function App() {
           <div className="apps-grid">
             {DATA.apps.map((app, i) => (
               <div key={i} className="app-card">
-                <img src={app.logo} alt={app.name} className="app-logo" style={{backgroundColor: `${app.accent}10`}} />
+                <img
+                  src={app.logo}
+                  alt={app.name}
+                  className="app-logo"
+                  style={{ backgroundColor: `${app.accent}10` }}
+                />
                 <div className="app-name">{app.name}</div>
                 <div className="app-desc">{app.desc}</div>
-                <div style={{display:'flex', gap:'10px'}}>
+                <div style={{ display: "flex", gap: "10px" }}>
                   {app.playStore !== "#" && (
-                    <a href={app.playStore} target="_blank" rel="noreferrer" className="store-btn btn-play">
+                    <a
+                      href={app.playStore}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="store-btn btn-play"
+                    >
                       <Icons.PlayStore /> Play Store
                     </a>
                   )}
                   {app.appStore !== "#" && (
-                    <a href={app.appStore} target="_blank" rel="noreferrer" className="store-btn btn-apple">
+                    <a
+                      href={app.appStore}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="store-btn btn-apple"
+                    >
                       <Icons.Apple /> App Store
                     </a>
                   )}
@@ -235,12 +363,22 @@ export default function App() {
                   <span>{item.company}</span>
                   <div className="company-icons">
                     {item.companyWebsite && (
-                      <a href={item.companyWebsite} target="_blank" rel="noreferrer" aria-label={`${item.company} website`}>
+                      <a
+                        href={item.companyWebsite}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`${item.company} website`}
+                      >
                         <Icons.Globe />
                       </a>
                     )}
                     {item.companyLinkedin && (
-                      <a href={item.companyLinkedin} target="_blank" rel="noreferrer" aria-label={`${item.company} LinkedIn`}>
+                      <a
+                        href={item.companyLinkedin}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`${item.company} LinkedIn`}
+                      >
                         <Icons.Linkedin />
                       </a>
                     )}
@@ -250,11 +388,16 @@ export default function App() {
                   <div className="promo-line"></div>
                   {item.isPromoted ? (
                     item.roles.map((r, idx) => (
-                      <div key={idx} className={`role-entry ${idx > 0 ? 'old' : ''}`}>
+                      <div
+                        key={idx}
+                        className={`role-entry ${idx > 0 ? "old" : ""}`}
+                      >
                         <div className="role-dot"></div>
                         <div className="role-title">{r.title}</div>
                         <div className="role-date">{r.period}</div>
-                        <div style={{fontSize:'14px', color:'#515154'}}>{r.desc}</div>
+                        <div style={{ fontSize: "14px", color: "#515154" }}>
+                          {r.desc}
+                        </div>
                       </div>
                     ))
                   ) : (
@@ -262,7 +405,9 @@ export default function App() {
                       <div className="role-dot"></div>
                       <div className="role-title">{item.role}</div>
                       <div className="role-date">{item.period}</div>
-                      <div style={{fontSize:'14px', color:'#515154'}}>{item.desc}</div>
+                      <div style={{ fontSize: "14px", color: "#515154" }}>
+                        {item.desc}
+                      </div>
                     </div>
                   )}
                 </div>
@@ -274,7 +419,9 @@ export default function App() {
 
       <footer>
         <div className="wrapper">
-          <p>© {new Date().getFullYear()} {DATA.name}</p>
+          <p>
+            © {new Date().getFullYear()} {DATA.name}
+          </p>
         </div>
       </footer>
     </div>
