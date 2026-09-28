@@ -208,59 +208,72 @@
   align-items: flex-start;
 }
 
-/* Refined Role Status Eyebrow */
-.hero-eyebrow {
+/* Bespoke Handcrafted Editorial Eyebrow (Non-generic, Human-crafted) */
+.hero-eyebrow-editorial {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  padding: 6px 14px 6px 8px;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
+  padding: 6px 12px 6px 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
   margin-bottom: 28px;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   font-size: 13px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  transition: all var(--transition-fast);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.hero-eyebrow:hover {
-  border-color: var(--color-border-hover);
-  background: var(--color-surface-hover);
+.hero-eyebrow-editorial:hover {
+  border-color: rgba(56, 189, 248, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
-.hero-eyebrow-pill {
-  display: inline-flex;
+.eyebrow-icon-box {
+  width: 24px;
+  height: 24px;
+  display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 4px 10px;
-  background: var(--color-btn-case-bg);
-  border: 1px solid var(--color-btn-case-border);
-  border-radius: 999px;
+  justify-content: center;
+  border-radius: 5px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.eyebrow-role {
   font-weight: 600;
-  color: var(--color-accent);
-  letter-spacing: 0.2px;
+  color: var(--color-heading);
+  letter-spacing: -0.01em;
 }
 
-.hero-eyebrow-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--color-accent);
-  box-shadow: 0 0 8px var(--color-accent);
-}
-
-.hero-eyebrow-sep {
-  color: var(--color-text-muted);
+.eyebrow-sep {
+  color: var(--color-border);
+  font-size: 13px;
   font-weight: 300;
   opacity: 0.6;
 }
 
-.hero-eyebrow-sub {
+.eyebrow-stack {
   color: var(--color-text-secondary);
   font-weight: 500;
-  letter-spacing: 0.1px;
+  letter-spacing: -0.01em;
+}
+
+.eyebrow-shipped-tag {
+  font-size: 11px;
+  font-weight: 600;
+  color: #4ade80;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.22);
+  padding: 2px 7px;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
 }
 
 /* Hero Title - Simple, Bold, Elegant Inter */
@@ -473,14 +486,65 @@
   margin-bottom: 40px;
 }
 
-.section-eyebrow {
-  display: inline-block;
-  font-size: 12px;
+/* Bespoke Architectural Section Kicker */
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 12px;
+  padding: 4px 10px 4px 6px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-kicker:hover {
+  border-color: rgba(56, 189, 248, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-1px);
+}
+
+.kicker-badge {
+  font-family: var(--font-family-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-size: 11px;
   font-weight: 700;
-  color: var(--color-accent);
+  color: var(--color-primary);
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 2px 7px;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  line-height: 1.25;
+}
+
+.kicker-sep {
+  color: var(--color-border);
+  font-size: 12px;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+.kicker-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  letter-spacing: 1.2px;
+  color: var(--color-text-secondary);
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.04em;
   margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .section-title {
@@ -1068,7 +1132,7 @@
 }
 
 .info-value {
-  color: #ffffff;
+  color: var(--color-heading);
   font-weight: 600;
   text-decoration: none;
   transition: color var(--transition-fast);
@@ -1081,12 +1145,12 @@
 .contact-social-pill {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
   font-size: 13px;
   font-weight: 500;
   color: var(--color-text-secondary);
-  padding: 6px 12px;
-  border-radius: 8px;
+  padding: 7px 14px;
+  border-radius: 999px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--color-border);
   text-decoration: none;
@@ -1094,9 +1158,11 @@
 }
 
 .contact-social-pill:hover {
-  color: #ffffff;
+  color: var(--color-accent);
   border-color: var(--color-accent);
-  background: rgba(56, 189, 248, 0.08);
+  background: var(--color-accent-subtle);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px -2px rgba(56, 189, 248, 0.25);
 }
 
 /* ==========================================================================
@@ -1255,14 +1321,10 @@
     gap: 12px;
   }
 
-  .hero-eyebrow {
+  .hero-eyebrow-editorial {
     flex-wrap: wrap;
     gap: 8px;
-    padding: 6px 12px;
-  }
-
-  .hero-eyebrow-sep {
-    display: none;
+    padding: 6px 10px;
   }
 
   .contact-card {
@@ -1353,18 +1415,19 @@
   font-weight: 600;
   color: var(--color-accent);
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 8px 18px;
   border-radius: 999px;
   background: rgba(56, 189, 248, 0.08);
-  border: 1px solid rgba(56, 189, 248, 0.2);
+  border: 1px solid rgba(56, 189, 248, 0.22);
   transition: all var(--transition-fast);
 }
 
 .back-link:hover {
-  background: rgba(56, 189, 248, 0.18);
+  background: rgba(56, 189, 248, 0.2);
   border-color: var(--color-accent);
   transform: translateX(-3px);
   color: #ffffff;
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.2);
 }
 
 .project-breadcrumbs {
@@ -1393,11 +1456,44 @@
   margin-bottom: 70px;
 }
 
+.project-brand-badge {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.project-hero-logo-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: var(--color-surface-solid);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.project-hero-logo-wrap:hover {
+  transform: scale(1.06);
+}
+
+.project-hero-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 11px;
+}
+
 .project-badge-row {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 16px;
   flex-wrap: wrap;
 }
 
@@ -1625,6 +1721,783 @@
 
 .step-dot-btn.active {
   width: 40px;
+}
+
+/* ==========================================================================
+   Interactive Smartphone Hero Mockup & Video Walkthrough
+   ========================================================================== */
+.phone-showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Ambient Pulsing Glow behind Device */
+.phone-ambient-aura {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 330px;
+  height: 560px;
+  border-radius: 60px;
+  filter: blur(55px);
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 0;
+  animation: ambientAuraPulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes ambientAuraPulse {
+  0% {
+    opacity: 0.3;
+    transform: translateX(-50%) scale(0.95);
+  }
+  100% {
+    opacity: 0.55;
+    transform: translateX(-50%) scale(1.05);
+  }
+}
+
+/* Floating Badges around Phone */
+.phone-floating-pill {
+  position: absolute;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 8px 15px;
+  border-radius: 999px;
+  background: rgba(14, 17, 26, 0.88);
+  color: #ffffff;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid;
+  pointer-events: none;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.float-top-left {
+  top: 70px;
+  left: -48px;
+  animation: floatTopLeft 4s ease-in-out infinite alternate;
+}
+
+.float-bottom-right {
+  bottom: 120px;
+  right: -48px;
+  animation: floatBottomRight 4.5s ease-in-out infinite alternate;
+}
+
+@keyframes floatTopLeft {
+  0% {
+    transform: translateY(0px) rotate(-1.5deg);
+  }
+  100% {
+    transform: translateY(-10px) rotate(1.5deg);
+  }
+}
+
+@keyframes floatBottomRight {
+  0% {
+    transform: translateY(0px) rotate(1.5deg);
+  }
+  100% {
+    transform: translateY(10px) rotate(-1.5deg);
+  }
+}
+
+.floating-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px currentColor;
+}
+
+/* Smartphone Chassis */
+.phone-mockup-frame {
+  width: 290px;
+  height: 595px;
+  border-radius: 42px;
+  background: #07090e;
+  border: 3px solid rgba(255, 255, 255, 0.16);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 65px -15px rgba(0, 0, 0, 0.75);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  z-index: 2;
+}
+
+.phone-mockup-frame:hover {
+  transform: translateY(-4px);
+}
+
+.phone-device-header {
+  padding: 10px 18px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 6;
+  background: rgba(7, 9, 14, 0.96);
+  user-select: none;
+}
+
+.phone-time {
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: var(--font-family-system);
+  letter-spacing: -0.2px;
+}
+
+.phone-dynamic-island {
+  width: 82px;
+  height: 20px;
+  background: #000000;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.08);
+}
+
+.island-lens {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #111827;
+  border: 1px solid #1f293d;
+}
+
+.island-sensor {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #090d16;
+}
+
+.phone-status-icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #e2e8f0;
+}
+
+/* Instagram / TikTok Style Story Progress Bar */
+.phone-story-progress-bar {
+  display: flex;
+  gap: 5px;
+  padding: 6px 14px 4px;
+  z-index: 6;
+  background: rgba(7, 9, 14, 0.96);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.story-segment-track {
+  flex: 1;
+  height: 3.5px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  transition: height var(--transition-fast);
+}
+
+.story-segment-track:hover {
+  height: 5px;
+}
+
+.story-segment-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 40ms linear;
+}
+
+/* Screen Viewport & Video Animation */
+.phone-screen-viewport {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: #040508;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-screen-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.phone-screen-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Ken Burns Subtle Video Drift Effect */
+.video-pan-active {
+  animation: kenBurnsWalkthrough 3.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes kenBurnsWalkthrough {
+  0% {
+    transform: scale(1) translateY(0);
+    filter: brightness(0.98);
+  }
+  100% {
+    transform: scale(1.045) translateY(-3px);
+    filter: brightness(1.02);
+  }
+}
+
+/* Angle Glare Sweep Effect */
+.phone-glass-sheen {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 4;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 25%, transparent 50%, rgba(255, 255, 255, 0.06) 80%, transparent 100%);
+  animation: glassSheenSweep 9s ease-in-out infinite;
+}
+
+@keyframes glassSheenSweep {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+.phone-home-indicator {
+  width: 90px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.55);
+  margin: 6px auto 8px;
+  flex-shrink: 0;
+}
+
+/* Phone Controls Panel */
+.phone-controls-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  z-index: 2;
+}
+
+.phone-nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.phone-arrow-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.phone-arrow-btn:hover {
+  background: var(--color-surface-hover);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: scale(1.06);
+}
+
+.phone-screen-title-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 190px;
+  overflow: hidden;
+}
+
+.screen-num-pill {
+  font-size: 11px;
+  font-weight: 700;
+  font-family: var(--font-family-mono);
+  letter-spacing: 0.5px;
+}
+
+.screen-title-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  margin-top: 1px;
+}
+
+/* Live Walkthrough Badge in Hero Specs */
+.live-walkthrough-badge {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(56, 189, 248, 0.4) !important;
+}
+
+.live-badge-glow {
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+}
+
+.live-dot-pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px currentColor;
+  animation: recordPulse 1.5s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   Dedicated App Screenshots Section
+   ========================================================================== */
+.project-screens-section {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.screens-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.screens-header-row .section-header {
+  margin-bottom: 0;
+}
+
+.screens-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+
+
+.screens-scroll-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.screens-scroll-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  padding: 0;
+}
+
+.screens-scroll-btn:hover {
+  background: var(--color-surface-hover);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.screens-gallery-track {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px 4px 24px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.screens-gallery-track::-webkit-scrollbar {
+  display: none;
+}
+
+.screen-device-card {
+  flex: 0 0 250px;
+  scroll-snap-align: start;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform var(--transition-normal);
+}
+
+.screen-device-card:hover {
+  transform: translateY(-6px);
+}
+
+.screen-phone-frame {
+  width: 250px;
+  height: 510px;
+  border-radius: 36px;
+  background: #07090e;
+  border: 2.5px solid rgba(255, 255, 255, 0.14);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.6);
+  transition: all var(--transition-normal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen-device-card:hover .screen-phone-frame {
+  border-color: var(--color-accent);
+  box-shadow: 0 22px 50px -10px rgba(0, 0, 0, 0.8), 0 0 35px -8px var(--color-accent-subtle);
+}
+
+.screen-frame-dynamic-island {
+  width: 68px;
+  height: 16px;
+  background: #000000;
+  border-radius: 999px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+
+.screen-frame-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.screen-frame-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(0, 0, 0, 0.8) 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 22px;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+  z-index: 5;
+}
+
+.screen-device-card:hover .screen-frame-overlay {
+  opacity: 1;
+}
+
+.screen-zoom-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(9, 11, 16, 0.9);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transform: translateY(4px);
+  transition: transform var(--transition-fast);
+}
+
+.screen-device-card:hover .screen-zoom-chip {
+  transform: translateY(0);
+}
+
+.screen-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 4px;
+}
+
+.screen-meta-top {
+  display: flex;
+  align-items: center;
+}
+
+.screen-index-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.screen-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin: 4px 0 2px;
+  line-height: 1.35;
+}
+
+.screen-card-caption {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Fullscreen Lightbox Modal with Video Slideshow
+   ========================================================================== */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(4, 6, 12, 0.92);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: lightboxFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes lightboxFadeIn {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(24px);
+  }
+}
+
+.lightbox-dialog {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.lightbox-top-toolbar {
+  position: fixed;
+  top: 24px;
+  left: 28px;
+  right: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+.lightbox-top-counter {
+  pointer-events: auto;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(18, 22, 34, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.lightbox-close-btn {
+  pointer-events: auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  padding: 0;
+}
+
+.lightbox-close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg) scale(1.08);
+}
+
+.lightbox-arrow-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.lightbox-arrow-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.lightbox-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 440px;
+  width: 100%;
+}
+
+.lightbox-phone-frame {
+  width: 310px;
+  height: 610px;
+  border-radius: 42px;
+  background: #07090e;
+  border: 3px solid;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 30px 80px -15px rgba(0, 0, 0, 0.85);
+}
+
+.lightbox-dynamic-island {
+  width: 86px;
+  height: 20px;
+  background: #000000;
+  border-radius: 999px;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+
+.lightbox-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.lightbox-caption-card {
+  background: rgba(18, 21, 31, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 12px 18px;
+  text-align: center;
+  width: 100%;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.lightbox-caption-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.lightbox-counter-pill {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 999px;
+  border: 1px solid;
+  font-family: var(--font-family-mono);
+}
+
+.lightbox-caption-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.lightbox-caption-desc {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin: 0;
+  line-height: 1.45;
+}
+
+@media (max-width: 768px) {
+  .phone-mockup-frame {
+    width: 260px;
+    height: 520px;
+  }
+  .lightbox-phone-frame {
+    width: 250px;
+    height: 490px;
+  }
+  .lightbox-arrow-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .float-top-left,
+  .float-bottom-right {
+    display: none;
+  }
 }
 
 /* Detail Sections */
@@ -1969,29 +2842,51 @@
   color: var(--color-heading);
 }
 
-:root.light .hero-eyebrow {
-  background: rgba(255, 255, 255, 0.95);
-  border-color: rgba(15, 23, 42, 0.1);
-  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+:root.light .hero-eyebrow-editorial {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.12);
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.05);
 }
 
-:root.light .hero-eyebrow:hover {
+:root.light .hero-eyebrow-editorial:hover {
   background: #ffffff;
   border-color: rgba(2, 132, 199, 0.35);
+  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.1);
 }
 
-:root.light .hero-eyebrow-pill {
-  background: #e0f2fe;
-  border-color: #bae6fd;
+:root.light .eyebrow-role {
+  color: #0f172a;
+}
+
+:root.light .eyebrow-stack {
+  color: #475569;
+}
+
+:root.light .eyebrow-shipped-tag {
+  color: #15803d;
+  background: rgba(34, 197, 94, 0.12);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+:root.light .section-kicker {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.12);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+:root.light .section-kicker:hover {
+  background: #ffffff;
+  border-color: rgba(2, 132, 199, 0.35);
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.08);
+}
+
+:root.light .kicker-badge {
   color: #0284c7;
+  background: rgba(2, 132, 199, 0.08);
+  border-color: rgba(2, 132, 199, 0.22);
 }
 
-:root.light .hero-eyebrow-dot {
-  background: #0284c7;
-  box-shadow: 0 0 6px #0284c7;
-}
-
-:root.light .hero-eyebrow-sub {
+:root.light .kicker-label {
   color: #475569;
 }
 
@@ -2135,6 +3030,37 @@
   background: radial-gradient(circle, rgba(2, 132, 199, 0.1) 0%, transparent 70%);
 }
 
+:root.light .contact-footer-links {
+  border-top-color: rgba(15, 23, 42, 0.08);
+}
+
+:root.light .info-label {
+  color: #64748b;
+}
+
+:root.light .info-value {
+  color: #0f172a;
+}
+
+:root.light .info-value:hover {
+  color: #0284c7;
+}
+
+:root.light .contact-social-pill {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.14);
+  color: #1e293b;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+:root.light .contact-social-pill:hover {
+  color: #0284c7;
+  border-color: #0284c7;
+  background: #f0f9ff;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.18);
+  transform: translateY(-2px);
+}
+
 :root.light .mockup-frame {
   background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
   border-color: rgba(15, 23, 42, 0.1);
@@ -2242,6 +3168,72 @@
   background: rgba(255, 255, 255, 0.1);
   border-color: #38bdf8;
   color: #38bdf8;
+}
+
+:root.light .project-hero-logo-wrap {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+:root.light .phone-arrow-btn,
+:root.light .screens-scroll-btn {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.12);
+  color: #0f172a;
+}
+
+:root.light .phone-arrow-btn:hover,
+:root.light .screens-scroll-btn:hover {
+  background: #f1f5f9;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+:root.light .screen-card-title {
+  color: #0f172a;
+}
+
+:root.light .screen-card-caption {
+  color: #475569;
+}
+
+:root.light .screen-device-card:hover .screen-phone-frame {
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.25), 0 0 25px -8px var(--color-accent-subtle);
+}
+
+:root.light .back-link {
+  background: #f0f9ff;
+  border-color: rgba(2, 132, 199, 0.28);
+  color: #0284c7;
+  box-shadow: 0 1px 3px rgba(2, 132, 199, 0.06);
+}
+
+:root.light .back-link:hover {
+  background: #0284c7;
+  border-color: #0284c7;
+  color: #ffffff;
+  transform: translateX(-3px);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
+}
+
+:root.light .crumb-sep {
+  color: #94a3b8;
+}
+
+:root.light .crumb-current {
+  color: #0f172a;
+}
+
+:root.light .phone-floating-pill {
+  background: rgba(255, 255, 255, 0.92);
+  color: #0f172a;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+:root.light .lightbox-overlay {
+  background: rgba(15, 23, 42, 0.92);
 }
 
 /* Global Smooth Theme Transition */

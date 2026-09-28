@@ -13,7 +13,11 @@ export function Contact({ name, phone, links }) {
         <div className="contact-glow" />
 
         <div className="contact-content">
-          <span className="section-eyebrow">Let's Connect</span>
+          <div className="section-kicker">
+            <span className="kicker-badge">04</span>
+            <span className="kicker-sep">/</span>
+            <span className="kicker-label">Get in Touch</span>
+          </div>
           <h2 className="contact-title">
             Have a project in mind or looking for a Mobile Engineer?
           </h2>

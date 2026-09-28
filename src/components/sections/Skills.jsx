@@ -69,7 +69,11 @@ export function Skills({ skills }) {
   return (
     <section id="skills" className="section-container skills-section">
       <div className="section-header">
-        <span className="section-eyebrow">Technical Mastery</span>
+        <div className="section-kicker">
+          <span className="kicker-badge">01</span>
+          <span className="kicker-sep">/</span>
+          <span className="kicker-label">Stack &amp; Architecture</span>
+        </div>
         <h2 className="section-title">Skills &amp; Engineering Stack</h2>
         <p className="section-subtitle">
           Battle-tested toolchain for shipping high-performance, store-ready mobile applications with clean architecture and 60fps fluid UX.

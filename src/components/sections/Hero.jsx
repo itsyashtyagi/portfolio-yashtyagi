@@ -15,14 +15,18 @@ export function Hero({
 }) {
   return (
     <section id="about" className="hero">
-      {/* Refined Role Status Eyebrow */}
-      <div className="hero-eyebrow">
-        <span className="hero-eyebrow-pill">
-          <span className="hero-eyebrow-dot" />
-          <span>{role}</span>
+      {/* Bespoke Handcrafted Editorial Eyebrow */}
+      <div className="hero-eyebrow-editorial">
+        <span className="eyebrow-icon-box" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="5" y="2" width="14" height="20" rx="3" ry="3" />
+            <line x1="12" y1="18" x2="12.01" y2="18" />
+          </svg>
         </span>
-        <span className="hero-eyebrow-sep">/</span>
-        <span className="hero-eyebrow-sub">Flutter &amp; Native Platforms</span>
+        <span className="eyebrow-role">{role}</span>
+        <span className="eyebrow-sep" aria-hidden="true">/</span>
+        <span className="eyebrow-stack">Flutter &amp; Native Architecture</span>
+        <span className="eyebrow-shipped-tag">10+ Shipped Apps</span>
       </div>
 
       {/* Main Impact Headline */}

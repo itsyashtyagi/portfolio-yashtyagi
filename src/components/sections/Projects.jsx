@@ -7,7 +7,11 @@ export function Projects({ apps }) {
   return (
     <section id="apps" className="section-container">
       <div className="section-header">
-        <span className="section-eyebrow">Proven Track Record</span>
+        <div className="section-kicker">
+          <span className="kicker-badge">02</span>
+          <span className="kicker-sep">/</span>
+          <span className="kicker-label">Featured Works</span>
+        </div>
         <h2 className="section-title">Production Mobile Apps</h2>
         <p className="section-subtitle">
           Live applications engineered from architecture to deployment, actively used by thousands of users.

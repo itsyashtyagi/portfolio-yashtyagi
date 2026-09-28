@@ -6,8 +6,12 @@ export function Experience({ experience }) {
   return (
     <section id="experience" className="section-container">
       <div className="section-header">
-        <span className="section-eyebrow">Work History</span>
-        <h2 className="section-title">Professional Path</h2>
+        <div className="section-kicker">
+          <span className="kicker-badge">03</span>
+          <span className="kicker-sep">/</span>
+          <span className="kicker-label">Career Journey</span>
+        </div>
+        <h2 className="section-title">Professional Experience</h2>
         <p className="section-subtitle">
           Demonstrated engineering leadership and full-cycle mobile app delivery in production environments.
         </p>

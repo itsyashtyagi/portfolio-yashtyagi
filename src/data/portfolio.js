@@ -1,3 +1,54 @@
+// Static App Assets (Logos & Mobile Screenshots)
+// myKoreme
+import myKoremeLogo from "@/assets/myKoreme/logo.webp";
+import koremeOne from "@/assets/myKoreme/koreme_one.webp";
+import koremeTwo from "@/assets/myKoreme/koreme_two.webp";
+import koremeThree from "@/assets/myKoreme/koreme_three.webp";
+import koremeFour from "@/assets/myKoreme/koreme_four.webp";
+import koremeFive from "@/assets/myKoreme/koreme_five.webp";
+
+// Mindto
+import mindtoLogo from "@/assets/mindto/logo.webp";
+import mindtoOne from "@/assets/mindto/mindto_one.webp";
+import mindtoTwo from "@/assets/mindto/mindto_two.webp";
+import mindtoThree from "@/assets/mindto/mindto_three.webp";
+import mindtoFour from "@/assets/mindto/mindto_four.webp";
+import mindtoFive from "@/assets/mindto/mindto_five.webp";
+import mindtoSix from "@/assets/mindto/mindto_six.webp";
+import mindtoSeven from "@/assets/mindto/mindto_seven.webp";
+import mindtoEight from "@/assets/mindto/mindto_eight.webp";
+import mindtoNine from "@/assets/mindto/mindto_nine.webp";
+import mindtoTen from "@/assets/mindto/mindto_ten.webp";
+
+// CloudHR
+import cloudhrLogo from "@/assets/cloudhr/logo.webp";
+import cloudhrOne from "@/assets/cloudhr/cloudhr_one.webp";
+import cloudhrTwo from "@/assets/cloudhr/cloudhr_two.webp";
+import cloudhrThree from "@/assets/cloudhr/cloudhr_three.webp";
+import cloudhrFour from "@/assets/cloudhr/cloudhr_four.webp";
+
+// LocaFri
+import locafriLogo from "@/assets/locafri/logo.webp";
+import locafriOne from "@/assets/locafri/locafri_one.webp";
+import locafriTwo from "@/assets/locafri/locafri_two.webp";
+import locafriThree from "@/assets/locafri/locafri_three.webp";
+import locafriFour from "@/assets/locafri/locafri_four.webp";
+
+// CCG Athletics
+import ccgLogo from "@/assets/ccg/logo.webp";
+import ccgOne from "@/assets/ccg/ccg_one.webp";
+import ccgTwo from "@/assets/ccg/ccg_two.webp";
+import ccgThree from "@/assets/ccg/ccg_three.webp";
+import ccgFour from "@/assets/ccg/ccg_four.webp";
+import ccgFive from "@/assets/ccg/ccg_five.webp";
+import ccgSix from "@/assets/ccg/ccg_six.webp";
+
+// CCG Guard
+import ccgGuardLogo from "@/assets/ccgGuard/logo.webp";
+import ccgGuardOne from "@/assets/ccgGuard/ccgGuard_one.webp";
+import ccgGuardTwo from "@/assets/ccgGuard/ccgGuard_two.webp";
+import ccgGuardThree from "@/assets/ccgGuard/ccgGuard_three.webp";
+
 export const PORTFOLIO_DATA = {
   name: "Yash Tyagi",
   role: "Mobile Application Engineer",
@@ -14,7 +65,7 @@ export const PORTFOLIO_DATA = {
   skills: [
     {
       category: "Languages",
-      items: ["Dart", "Kotlin (basic)", "Swift (basic)", "JavaScript"],
+      items: ["Dart", "Kotlin", "Swift", "JavaScript"],
     },
     {
       category: "Cross-Platform Framework",
@@ -22,7 +73,7 @@ export const PORTFOLIO_DATA = {
     },
     {
       category: "Native Platforms",
-      items: ["Android SDK (basic)", "iOS / SwiftUI (basic)"],
+      items: ["Android SDK", "iOS / SwiftUI"],
     },
     {
       category: "State Management & Libraries",
@@ -34,7 +85,7 @@ export const PORTFOLIO_DATA = {
         "Google Play Console",
         "App Store Connect",
         "App Signing",
-        "Fastlane (basic)",
+        "Fastlane",
       ],
     },
     {
@@ -146,7 +197,39 @@ export const PORTFOLIO_DATA = {
       playStore:
         "https://play.google.com/store/apps/details?id=com.koreme.app",
       appStore: "#",
-      logo: "https://play-lh.googleusercontent.com/7bF79l40minka3JndpRdKgBimZPeMfFfrLiTMOGpZ7dEg23ynR6LnWTg8lWYZUBTYBE3o8ve6D9j7aeVh7Pbm0M=w480-h960",
+      logo: myKoremeLogo,
+      screenshots: [
+        {
+          id: "koreme-1",
+          src: koremeOne,
+          title: "Personalized Patient Dashboard",
+          caption: "Comprehensive wellness tracking, patient medical profile & real-time therapy logs",
+        },
+        {
+          id: "koreme-2",
+          src: koremeTwo,
+          title: "Therapy & Treatment Programs",
+          caption: "Interactive therapy schedule, active doctor-prescribed protocols & dosage regimens",
+        },
+        {
+          id: "koreme-3",
+          src: koremeThree,
+          title: "Clinical Document Vault",
+          caption: "Encrypted bloodwork and lab uploads, medical records & digital questionnaire forms",
+        },
+        {
+          id: "koreme-4",
+          src: koremeFour,
+          title: "AI Wellness Assistant",
+          caption: "24/7 intelligent clinical query companion, appointment help & interactive FAQ",
+        },
+        {
+          id: "koreme-5",
+          src: koremeFive,
+          title: "Appointments & Exclusive Specials",
+          caption: "Seamless treatment session bookings, automated push reminders & patient benefits",
+        },
+      ],
       accent: "#0ea5e9",
       accentGradient: "linear-gradient(135deg, #0ea5e9 0%, #38bdf8 100%)",
       highlights: {
@@ -203,7 +286,69 @@ export const PORTFOLIO_DATA = {
       ],
       appStore: "https://apps.apple.com/in/iphone/search?term=Mindto",
       playStore: "#",
-      logo: "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/15/05/d415054b-9568-afe6-0cac-51739b84c83d/Placeholder.mill/400x400bb-75.webp",
+      logo: mindtoLogo,
+      screenshots: [
+        {
+          id: "mindto-1",
+          src: mindtoOne,
+          title: "Athlete Focus & Audio Library",
+          caption: "Guided visualization routines, meditation journeys & sports psychology conditioning",
+        },
+        {
+          id: "mindto-2",
+          src: mindtoTwo,
+          title: "Pre-Competition Audio Routines",
+          caption: "High-impact focus audio engineered to prime confidence and eliminate pre-game nerves",
+        },
+        {
+          id: "mindto-3",
+          src: mindtoThree,
+          title: "Dedicated Media Player",
+          caption: "Offline caching, background playback and native lock screen audio controls",
+        },
+        {
+          id: "mindto-4",
+          src: mindtoFour,
+          title: "Daily Habit Streaks & Motivation",
+          caption: "Streak trackers, mental resilience scores & daily mental training targets",
+        },
+        {
+          id: "mindto-5",
+          src: mindtoFive,
+          title: "Reflective Performance Journal",
+          caption: "Post-game reflection, mood logging & mental check-in prompts",
+        },
+        {
+          id: "mindto-6",
+          src: mindtoSix,
+          title: "Custom Sport Playlists",
+          caption: "Sport-specific psychological drills tailored for track, basketball, soccer, and tennis",
+        },
+        {
+          id: "mindto-7",
+          src: mindtoSeven,
+          title: "Personalized Mindset Assessment",
+          caption: "Initial diagnostic determining athlete focus zones, competitive tier and goals",
+        },
+        {
+          id: "mindto-8",
+          src: mindtoEight,
+          title: "Offline Audio Vault",
+          caption: "Instant local storage allowing athletes to listen even inside remote stadium locker rooms",
+        },
+        {
+          id: "mindto-9",
+          src: mindtoNine,
+          title: "Mental Growth Analytics",
+          caption: "Visualized progression metrics tracking weekly consistency and resilience improvement",
+        },
+        {
+          id: "mindto-10",
+          src: mindtoTen,
+          title: "Athlete Profile & Preferences",
+          caption: "Custom audio speed settings, reminder notifications & seamless cloud sync",
+        },
+      ],
       accent: "#4ADE80",
       accentGradient: "linear-gradient(135deg, #22c55e 0%, #4ade80 100%)",
       highlights: {
@@ -261,7 +406,33 @@ export const PORTFOLIO_DATA = {
       playStore:
         "https://play.google.com/store/apps/details?id=com.cloudhr&hl=en_IN",
       appStore: "https://apps.apple.com/in/app/cloudhr/id6751147780",
-      logo: "https://play-lh.googleusercontent.com/Ayf-H5YjMLDLyCAmxBKyBBHUfM-i_gV_NN4PqXSvzf715h_1_WqXMGPP7_t5qHfajg=w480-h960-rw",
+      logo: cloudhrLogo,
+      screenshots: [
+        {
+          id: "cloudhr-1",
+          src: cloudhrOne,
+          title: "Staff Workforce Dashboard",
+          caption: "At-a-glance punch status, shifts, leave balances & company announcements",
+        },
+        {
+          id: "cloudhr-2",
+          src: cloudhrTwo,
+          title: "Geofenced Punch-In",
+          caption: "Live GPS coordinates boundary check and facial verification for fraud-proof attendance",
+        },
+        {
+          id: "cloudhr-3",
+          src: cloudhrThree,
+          title: "Leave Management & Approvals",
+          caption: "Multi-tier leave requests, balance computations and manager one-tap reviews",
+        },
+        {
+          id: "cloudhr-4",
+          src: cloudhrFour,
+          title: "Employee Directory & Payslips",
+          caption: "Direct team communications, WhatsApp contacts & encrypted monthly payslip downloads",
+        },
+      ],
       accent: "#3b82f6",
       accentGradient: "linear-gradient(135deg, #1e40af 0%, #3b82f6 100%)",
       highlights: {
@@ -319,7 +490,33 @@ export const PORTFOLIO_DATA = {
       playStore:
         "https://play.google.com/store/apps/details?id=com.locafri.app&hl=en_IN",
       appStore: "#",
-      logo: "https://play-lh.googleusercontent.com/9FzQJbN2y_YCHYdkCB9SUJQR-ZgBNwnCumW6I1UHYR3RNQEcnSG6HnuhsSd_7b093zE=w480-h960-rw",
+      logo: locafriLogo,
+      screenshots: [
+        {
+          id: "locafri-1",
+          src: locafriOne,
+          title: "Fleet Catalog & Search",
+          caption: "Live availability filtering by luxury, SUV, transmission and rental rates",
+        },
+        {
+          id: "locafri-2",
+          src: locafriTwo,
+          title: "Interactive Pickup Map",
+          caption: "Mapbox pin-point pickup stations, delivery hubs and city return locations",
+        },
+        {
+          id: "locafri-3",
+          src: locafriThree,
+          title: "Verified Booking Checkout",
+          caption: "Driver identity scanning, damage insurance add-ons and payment confirmation",
+        },
+        {
+          id: "locafri-4",
+          src: locafriFour,
+          title: "Digital Rental Pass & Keys",
+          caption: "Active itinerary, pre-trip vehicle condition photo checklist & roadside assistance",
+        },
+      ],
       accent: "#f97316",
       accentGradient: "linear-gradient(135deg, #ea580c 0%, #f97316 100%)",
       highlights: {
@@ -378,7 +575,45 @@ export const PORTFOLIO_DATA = {
         "https://play.google.com/store/apps/details?id=com.ccgathletic.customer&hl=en_IN",
       appStore:
         "https://apps.apple.com/us/app/ccg-collective-city-game/id6753856914",
-      logo: "https://play-lh.googleusercontent.com/qBS_AnFHRTDhW-e5M9SLybCBOyaSkJT8rRaKo4SGVnFyIkBRJ0QnoEjZp2_s2CKSxf6JRaymDRGsXrVQ3okUnAY=w480-h960-rw",
+      logo: ccgLogo,
+      screenshots: [
+        {
+          id: "ccg-1",
+          src: ccgOne,
+          title: "Tournament & Match Schedule",
+          caption: "Upcoming sports championships, fixtures, venue maps & live brackets",
+        },
+        {
+          id: "ccg-2",
+          src: ccgTwo,
+          title: "Interactive Seat Selector",
+          caption: "Stadium seating plans, VIP tiers & real-time section reservation",
+        },
+        {
+          id: "ccg-3",
+          src: ccgThree,
+          title: "Anti-Fraud Mobile Tickets",
+          caption: "Encrypted QR passes for rapid contactless gate admission",
+        },
+        {
+          id: "ccg-4",
+          src: ccgFour,
+          title: "Official Team Merchandise Store",
+          caption: "Athletic apparel, jerseys and accessories with direct in-app checkout",
+        },
+        {
+          id: "ccg-5",
+          src: ccgFive,
+          title: "Live Scoreboards & Results",
+          caption: "Real-time match telemetry, goal updates & tournament leaderboard",
+        },
+        {
+          id: "ccg-6",
+          src: ccgSix,
+          title: "Fan Digital Passbook",
+          caption: "Offline ticket access, order history & digital tournament credentials",
+        },
+      ],
       accent: "#2563eb",
       accentGradient: "linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%)",
       highlights: {
@@ -436,7 +671,27 @@ export const PORTFOLIO_DATA = {
       playStore:
         "https://play.google.com/store/apps/details?id=com.ccg.athleticsguard&hl=en_IN",
       appStore: "https://apps.apple.com/us/app/ccg-guard-app/id6753932283",
-      logo: "https://play-lh.googleusercontent.com/fGbKs8KuaZk1gBcaVmRhaTxV0ZzsrotSykUgyv9Bwl_ewLbS2HRp7aMVNm-PeCG_1SJFJawy78n7_uQ3LRT6mAo=w480-h960-rw",
+      logo: ccgGuardLogo,
+      screenshots: [
+        {
+          id: "guard-1",
+          src: ccgGuardOne,
+          title: "Gate Officer Login & Venue Selection",
+          caption: "Secure authentication, scoped stadium gate assignments & offline sync credentials",
+        },
+        {
+          id: "guard-2",
+          src: ccgGuardTwo,
+          title: "Ultra-Fast QR Ticket Scanner",
+          caption: "Sub-100ms camera reader with instant audio/haptic admission validation",
+        },
+        {
+          id: "guard-3",
+          src: ccgGuardThree,
+          title: "Live Attendance & Gate Telemetry",
+          caption: "Real-time entry counters, duplicate ticket prevention & stadium capacity monitoring",
+        },
+      ],
       accent: "#64748b",
       accentGradient: "linear-gradient(135deg, #334155 0%, #64748b 100%)",
       highlights: {
