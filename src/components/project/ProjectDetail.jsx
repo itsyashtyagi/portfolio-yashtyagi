@@ -11,6 +11,7 @@ export function ProjectDetail({ project, allProjects }) {
   const [activeStep, setActiveStep] = useState(0);
   const [activeScreenIndex, setActiveScreenIndex] = useState(0);
   const [lightboxIndex, setLightboxIndex] = useState(null);
+  const [lightboxPlaying, setLightboxPlaying] = useState(false);
   const galleryTrackRef = useRef(null);
 
   useEffect(() => {
