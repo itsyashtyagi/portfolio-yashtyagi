@@ -7,6 +7,13 @@ import koremeThree from "@/assets/myKoreme/koreme_three.webp";
 import koremeFour from "@/assets/myKoreme/koreme_four.webp";
 import koremeFive from "@/assets/myKoreme/koreme_five.webp";
 
+// Chalo Reisen
+import chaloLogo from "@/assets/chaloReisen/logo.webp";
+import chaloOne from "@/assets/chaloReisen/chalo_one.webp";
+import chaloTwo from "@/assets/chaloReisen/chalo_two.webp";
+import chaloThree from "@/assets/chaloReisen/chalo_three.webp";
+import chaloFour from "@/assets/chaloReisen/chalo_four.webp";
+
 // Mindto
 import mindtoLogo from "@/assets/mindto/logo.webp";
 import mindtoOne from "@/assets/mindto/mindto_one.webp";
@@ -192,11 +199,11 @@ export const PORTFOLIO_DATA = {
         "Firebase Auth & Cloud Messaging",
         "RESTful APIs (FastAPI / Node)",
         "Biometric Authentication",
-        "Google Play Console",
+        "Google Play & App Store Live",
       ],
       playStore:
         "https://play.google.com/store/apps/details?id=com.koreme.app",
-      appStore: "#",
+      appStore: "https://apps.apple.com/us/app/mykoreme/id6784136161",
       logo: myKoremeLogo,
       screenshots: [
         {
@@ -233,8 +240,93 @@ export const PORTFOLIO_DATA = {
       accent: "#0ea5e9",
       accentGradient: "linear-gradient(135deg, #0ea5e9 0%, #38bdf8 100%)",
       highlights: {
-        platform: "Cross-Platform (Android & iOS Architecture)",
+        platform: "Dual Store (Play Store & App Store)",
         architecture: "Clean Architecture + Bloc Pattern",
+        status: "Production Live",
+      },
+    },
+    {
+      id: "chalo-reisen",
+      name: "Chalo Reisen",
+      category: "Travel & Tourism",
+      tagline: "Your Personal India Trip Companion & Digital Travel Hub",
+      desc: "All-in-one travel companion for India trips, organizing day-by-day itineraries, digital flight & hotel vouchers, local guide & driver contacts, and customized packing lists.",
+      overview:
+        "Chalo! Reisen is your essential digital travel companion for journeys across India. Designed to support travelers before, during, and after their adventure, the app unifies day-to-day itineraries, flight/train tickets, hotel vouchers, and direct contact details for drivers, guides, and local representatives into a single, intuitive travel hub.",
+      howItWorks: [
+        {
+          step: "01",
+          title: "Personalized Daily Itinerary",
+          desc: "Travelers access detailed schedules for each day of their trip, including accommodation addresses, scheduled transfers, activities, and key meeting points.",
+        },
+        {
+          step: "02",
+          title: "Centralized Travel Document Vault",
+          desc: "Safely stores and organizes flight, train, and bus tickets, hotel confirmations, entrance passes, and essential travel vouchers in one accessible place.",
+        },
+        {
+          step: "03",
+          title: "Instant Guide & Driver Directory",
+          desc: "Provides quick one-tap contact access (phone, email, WhatsApp) to assigned tour guides, private drivers, and local support representatives throughout India.",
+        },
+        {
+          step: "04",
+          title: "Smart Packing Lists & Travel Prep",
+          desc: "Delivers customized packing lists for cultural, trekking, cycling, or yoga tours alongside comprehensive India travel tips on visas, health, currency, and etiquette.",
+        },
+      ],
+      keyFeatures: [
+        "Day-by-Day Interactive Travel Itinerary & Daily Transfer Schedules",
+        "Secure Storage for Flight, Train, Bus & Sightseeing Entrance Tickets",
+        "Direct Contact Channels (WhatsApp, Phone, Email) for Drivers & Guides",
+        "Personalized Packing Lists Tailored to Tour Types & Activities",
+        "In-depth India Travel Guides (Visas, SIM Cards, Health, Climate, Etiquette)",
+        "Dual Deployment on Google Play Store & Apple App Store",
+      ],
+      techStack: [
+        "Flutter",
+        "Dart",
+        "Bloc State Management",
+        "Offline Storage & Document Caching",
+        "Direct Communication Native Linking",
+        "REST APIs & Cloud Sync",
+        "Google Play & App Store Live",
+      ],
+      playStore:
+        "https://play.google.com/store/apps/details?id=com.chalo.reisen",
+      appStore: "https://apps.apple.com/us/app/chalo-reisen/id6800291823",
+      logo: chaloLogo,
+      screenshots: [
+        {
+          id: "chalo-1",
+          src: chaloOne,
+          title: "Upcoming Journeys Dashboard",
+          caption: "Intuitive travel hub featuring upcoming tour itineraries, destinations & quick navigation",
+        },
+        {
+          id: "chalo-2",
+          src: chaloTwo,
+          title: "Guide & Driver Contact Directory",
+          caption: "Direct access to tour guides with WhatsApp chat, direct phone dial, and email links",
+        },
+        {
+          id: "chalo-3",
+          src: chaloThree,
+          title: "Day-by-Day Itinerary & Transfers",
+          caption: "Detailed route breakdown, vehicle transfer times, hotel bookings & sightseeing schedules",
+        },
+        {
+          id: "chalo-4",
+          src: chaloFour,
+          title: "Expedition History & Past Trips",
+          caption: "Searchable archive of completed journeys, travel memories, and past itinerary logs",
+        },
+      ],
+      accent: "#db2777",
+      accentGradient: "linear-gradient(135deg, #db2777 0%, #f43f5e 100%)",
+      highlights: {
+        platform: "Dual Store (Play Store & App Store)",
+        architecture: "Clean Architecture + Bloc State",
         status: "Production Live",
       },
     },
